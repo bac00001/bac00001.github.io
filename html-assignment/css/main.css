@@ -34,3 +34,5 @@ nav a {
 nav a:hover {
     background-color: rgb(142, 79, 2);
 }
+
+/* I didn't know how to add box-shadow, list-style-type, and border, so I followed tutorials from this source: https://www.w3schools.com/css/default.asp */
