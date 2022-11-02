@@ -1,0 +1,130 @@
+body {
+    background-color: #aad4cf;
+}
+
+.container2 {
+    position: relative;
+    /* width: 100%;
+    height: auto;
+    top: 0%s;
+    z-index: 1; */
+    text-align: center;
+    color: white;
+}
+
+.site-title {
+    /* z-index: 2; */
+    position: absolute;
+    font-size: 70px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #d3f4f0;
+    width: 1021px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 35px;
+}
+
+nav {
+    position: relative;
+    top: -15px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    font-size: 25px;
+    width: 321px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+nav li .a1, .a2 {
+    border-right: 1.5px solid black;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: lighter;
+    padding: 0 12px;
+}
+
+.container .image2 {
+    float: left;
+    width: 250px;
+    margin: 0 22px 22px 12px;
+    display: block;
+}
+
+.container p {
+    padding: 0 12px;
+    font-size: 17.5px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 0 12px;
+}
+
+.facts {
+    position: relative;
+    left: -11px;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+fieldset {
+    margin: 0 12px 35px 12px;
+    padding: 18px;
+}
+
+#name, #email, #message {
+    width: 99.5%;
+    margin: 7px 0 0 0;
+}
+
+.label {
+    margin: 15px 0 0 0;
+}
+
+#message {
+    height: 80px;
+}
+
+.name, .email, .message {
+    font-size: 18.5px;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.button p {
+    font-size: 12px;
+}
+
+.button {
+    border: 1px solid black;
+    width: 55px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+footer {
+    text-align: right;
+    margin: 0 31px;
+}
