@@ -1,0 +1,12 @@
+/* .hour {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+.one, .two {
+    flex-basis: calc(50% - 3px);
+} */
