@@ -31,11 +31,14 @@
                     <!-- Hyperlinks added to jump to each section. -->
 
                     <!-- Search bar -->
-                    <input type="text" placeholder="Search">
+                    <li> <input class="search-bar" type="text" placeholder="Search">
                     <!-- Search Icon -->
                     <i class="fa fa-search"></i>
+                    </li>
                 </ul>
-                <!-- For mobile screen, nav will be centered with background color for the logo and the nav-home and the logo is aligned-left.  -->
+                <!-- For mobile screen, nav will be centered with background color for the logo and the nav-home and the logo is aligned-left. -->
+                <!-- For bigger screen, nav will be in a row -->
+                <!-- The states of hover, active, and visited will be added in the CSS. -->
 
             </nav>
         </div>
@@ -59,7 +62,7 @@
     <main>
 
         <!-- About Us Section -->
-        <div class="about-us" id="about-us">
+        <section class="about-us" id="about-us">
             <div>
                 <img class="about-us-image" src="images/about-us.jpg" alt="Office Space">
                 <div class="about-us-text">
@@ -70,16 +73,17 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda consequatur nesciunt ad labore, quod ab commodi quisquam eligendi? Ipsum neque quod dignissimos maiores.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="our-services" id="our-services">
+        <!-- Services Section -->
+        <section class="our-services" id="our-services">
 
             <!-- For the bigger screen, grid-template-areas and grid-area will be used for the layout. -->
-            <div class="a">Our Services</div>
+            <div class="a"> <h2>Our Services</h2> </div>
 
             <div class="b">
                 <img src="images/digital.jpg" alt="Digital Transformation">
-                <h2>Digital Transformation</h2>
+                <h3>Digital Transformation</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Digital Plans <i class='fa fa-caret-right'></i>
@@ -88,7 +92,7 @@
 
             <div class="c">
                 <img src="images/marketing.jpg" alt="Marketing">
-                <h2>Marketing</h2>
+                <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Marketing Plans <i class='fa fa-caret-right'></i>
@@ -97,7 +101,7 @@
 
             <div class="d">
                 <img src="images/video.jpg" alt="Video Production">
-                <h2>Video Production</h2>
+                <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Video Plans <i class='fa fa-caret-right'></i>
@@ -106,7 +110,7 @@
 
             <div class="e">
                 <img src="images/web.jpg" alt="Web Development">
-                <h2>Web Development</h2>
+                <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Web Plans <i class='fa fa-caret-right'></i>
@@ -115,14 +119,15 @@
 
             <div class="f">
                 <img src="images/print.jpg" alt="Print">
-                <h2>Print</h2>
+                <h3>Print</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Print Plans <i class='fa fa-caret-right'></i>
                 </button>
             </div>
-        </div>
+        </section>
 
+        <!-- Vision Section -->
         <div class="our-vision">
             <!-- background-image will be added in CSS. -->
 
@@ -135,8 +140,8 @@
             </div>
         </div>
 
-        <!-- Our Team Section -->
-        <div class="our-team" id="our-team">
+        <!-- Team Section -->
+        <section class="our-team" id="our-team">
             <!-- For bigger screen, display: flex will be added in CSS for the layout of this section. -->
 
             <div class="our-team-title">
@@ -158,9 +163,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem dolores voluptatibus debitis consequatur. Id quis numquam dolorem veritatis? Veniam culpa ratione perferendis magnam error voluptatibus commodi assumenda tenetur dignissimos.</p>
             </div>
             <img class="bob-image" src="images/bob.jpg" alt="Bob Rite">
-        </div>
+        </section>
 
-        <div class="contact" id="contact">
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
             <div class="grid-contact">
                 <!-- For bigger screen, grid will be used in the CSS for the layout of this section. -->
 
@@ -193,21 +199,36 @@
                 </div>
 
                 <div class="box4">
-                    <h3>Hours of operation</h3>
+                    <table>
+
+                        <!-- border and border-spacing will be used in the CSS. -->
+                        <caption> <h3>Hours of operation</h3> </caption>
                 
-                    <!-- display: flex will be added in CSS for the table. -->
-                    <section class="hour">
-                        <div class="box one">Days</div>
-                        <div class="box two">Hours</div>
-                        <div class="box three">Monday - Friday</div>
-                        <div class="box four">9 AM - 6 PM</div>
-                        <div class="box five">Saturday - Sunday</div>
-                        <div class="box six">Closed</div>
-                    </section>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                
+                    </table>
+
                 </div>
             </div>
 
-        </div>
+        </section>
 
     </main>
 
