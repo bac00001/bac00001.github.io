@@ -11,13 +11,13 @@
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Final Project</title>
+    <title>Dalin Bac - Final Project</title>
 </head>
 
 <body>
     <!-- Header Section -->
-    <header class="main-header">
-        <div class="navigation">
+    <header class="wrapper">
+        
             <nav>
                 <ul>
                     <li class="logo">
@@ -28,9 +28,10 @@
                     <li> <a href="#our-services">Services</a> </li>
                     <li> <a href="#our-team">Team</a> </li>
                     <li> <a href="#contact">Contact</a> </li>
-                    <!-- Hyperlinks added to jump to each section. -->
+                    <!-- Hyperlinks added to each navigation elements to jump to each section. -->
 
-                    <!-- Search bar -->
+                    <!-- Search bar 
+                    The input tag makes the search bar interactive-->
                     <li> <input class="search-bar" type="text" placeholder="Search">
                     <!-- Search Icon -->
                     <i class="fa fa-search"></i>
@@ -41,30 +42,36 @@
                 <!-- The states of hover, active, and visited will be added in the CSS. -->
 
             </nav>
-        </div>
+        
 
         <!-- Banner section -->
-        <div class="banner">
+        <div class="wrapper">
             <!-- The background-photo will be added in the CSS. -->
 
-            <div>
+            <div class="banner-text">
                 <h1>Welcome To Three Stars Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis reprehenderit alias, odit suscipit
                     maiores nulla deleniti dolores esse dolor saepe, in aliquam necessitatibus ipsum expedita velit
                     distinctio repellendus harum?</p>
                 <button class="banner-button">
-                    Connect with us <i class='fa fa-caret-right'></i>
+                    <a href="#contact"> Connect with us <i class='fa fa-caret-right'></i> </a>
                 </button>
+                <!-- The button tag makes the button clickable -->
             </div>
         </div>
     </header>
 
-    <main>
+    <main class="wrapper">
 
         <!-- About Us Section -->
-        <section class="about-us" id="about-us">
+
+        <!-- section tag is used to divide the different sections of the page. -->
+        <section class="wrapper" id="about-us">
+            <!-- id added to create hyperlink in the nav. -->
             <div>
-                <img class="about-us-image" src="images/about-us.jpg" alt="Office Space">
+                <div class="about-us-image">
+                    <img  src="images/about-us.jpg" alt="Office Space">
+                </div>
                 <div class="about-us-text">
                     <h2 class="about-us-heading">About Us</h2>
 
@@ -76,12 +83,12 @@
         </section>
 
         <!-- Services Section -->
-        <section class="our-services" id="our-services">
+        <section class="wrapper" id="our-services">
 
             <!-- For the bigger screen, grid-template-areas and grid-area will be used for the layout. -->
-            <div class="a"> <h2>Our Services</h2> </div>
+            <div class="services-text"> <h2>Our Services</h2> </div>
 
-            <div class="b">
+            <div class="plan-card digital">
                 <img src="images/digital.jpg" alt="Digital Transformation">
                 <h3>Digital Transformation</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
@@ -90,7 +97,7 @@
                 </button>
             </div>
 
-            <div class="c">
+            <div class="plan-card marketing">
                 <img src="images/marketing.jpg" alt="Marketing">
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
@@ -99,7 +106,7 @@
                 </button>
             </div>
 
-            <div class="d">
+            <div class="plan-card video">
                 <img src="images/video.jpg" alt="Video Production">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
@@ -108,7 +115,7 @@
                 </button>
             </div>
 
-            <div class="e">
+            <div class="plan-card web">
                 <img src="images/web.jpg" alt="Web Development">
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
@@ -117,7 +124,7 @@
                 </button>
             </div>
 
-            <div class="f">
+            <div class="plan-card print">
                 <img src="images/print.jpg" alt="Print">
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
@@ -128,7 +135,7 @@
         </section>
 
         <!-- Vision Section -->
-        <div class="our-vision">
+        <div class="wrapper">
             <!-- background-image will be added in CSS. -->
 
             <div>
@@ -141,14 +148,16 @@
         </div>
 
         <!-- Team Section -->
-        <section class="our-team" id="our-team">
+        <section class="wrapper" id="our-team">
             <!-- For bigger screen, display: flex will be added in CSS for the layout of this section. -->
 
             <div class="our-team-title">
                 <h2>Our Team</h2>
             </div>
 
-            <img class="john-image" src="images/john.jpg" alt="John Doe">
+            <div class="john-image">
+                <img src="images/john.jpg" alt="John Doe">
+            </div>
             <div class="john-text">
                 <h3>John Doe</h3>
                 <p class="profession">CEO and Co-owner</p>
@@ -158,47 +167,51 @@
 
             <div class="bob-text">
                 <h3>Bob Rite</h3>
-                <p class="profession">CEO and Co-owner</p>
+                <p class="profession">CFO and Co-owner</p>
                 <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem dolores voluptatibus debitis consequatur. Id quis numquam dolorem veritatis? Veniam culpa ratione perferendis magnam error voluptatibus commodi assumenda tenetur dignissimos.</p>
             </div>
-            <img class="bob-image" src="images/bob.jpg" alt="Bob Rite">
+            <div class="bob-image">
+                <img src="images/bob.jpg" alt="Bob Rite">
+            </div>
         </section>
 
         <!-- Contact Section -->
-        <section class="contact" id="contact">
+        <section class="wrapper" id="contact">
             <div class="grid-contact">
                 <!-- For bigger screen, grid will be used in the CSS for the layout of this section. -->
 
-                <div class="box1">
+                <div class="contact">
                     <h2>Contact Us</h2>
                 </div>
 
-                <div class="box2">
+                <div class="message">
                     <h3>Send us a message</h3>
+                    <!-- form and fieldset are used for the form to be interactive. -->
                     <form action="appreciation.html">
                         <fieldset> 
                             <!-- remove the border of the fieldset in CSS. -->
+                            <!-- put all the label and input in the same fieldset to group them in the same box. -->
+                            <label for="fullname">Full Name</label>
+                            <input id="fullname" type="text" name="fullname" required>
 
-                            <label for="fullname">Full Name</label> <br>
-                            <input id="fullname" type="text" name="fullname" required> <br>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" required>
 
-                            <label for="email">Email</label> <br>
-                            <input type="text" name="email" id="email" required> <br>
-
-                            <label for="message">Message</label> <br>
+                            <label for="message">Message</label>
                             <textarea name="message" id="message"></textarea>
+                            <!-- "textarea" is used instead of "input" to have a bigger box that is more suitable for longer text (the overflow text moves upward) and not just a single line input box (the overflow text moves to the left). -->
                         </fieldset>
                     </form>
                     <button class="contact-button">Send</button>
                 </div>
 
-                <div class="box3">
+                <div class="location">
                     <h3>Location</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676094!2d-75.75712548407164!3d45.349927779099716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231257215!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <div class="box4">
+                <div class="hour">
                     <table>
 
                         <!-- border and border-spacing will be used in the CSS. -->
@@ -232,9 +245,10 @@
 
     </main>
 
-    <footer>
+    <footer class="wrapper">
         <p>&copy;  Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+        <!-- link to the unsplash website is added. It opens in a new tab, so the user doesn't need to leave our site. -->
     </footer>
 
 </body>
