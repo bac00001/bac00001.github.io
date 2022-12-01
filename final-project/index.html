@@ -56,9 +56,17 @@
                     distinctio repellendus harum?
                 </p>
 
-                <button class="banner-button" data-scroll="#contact"> 
-                    Connect with us <i class='fa fa-caret-right'></i> 
-                </button>
+                <!-- <button class="banner-button"> 
+                    <a href="#contact"> 
+                        Connect with us <i class='fa fa-caret-right'></i> 
+                    </a>
+                </button> -->
+                <!-- The above method was marked as invalid in HTML Validator, so the method below will be used.
+                     The styling to make it look like a button such as background-color and padding will be added in the CSS. -->
+
+                <a href="#contact"> 
+                    Connect with us <i class='fa fa-caret-right'></i>
+                </a>
                 <!-- The button is linked to the contact section, so it jumps to that section when the button is clicked. -->
             </div>
         </div>
@@ -194,6 +202,7 @@
                     <form action="appreciation.html">
                         <fieldset> 
                             <!-- remove the border of the fieldset in CSS. -->
+
                             <!-- put all the label and input in the same fieldset to group them in the same box. -->
                             <label for="fullname">Full Name</label>
                             <input id="fullname" type="text" name="fullname" required>
@@ -204,9 +213,11 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message"></textarea>
                             <!-- "textarea" is used instead of "input" to have a bigger box that is more suitable for longer text (the overflow text moves upward) and not just a single line input box (the overflow text moves to the left). -->
+
+                            <button type="submit">Send</button>
+                            <!-- the button is added inside the fieldset because it is a part of the form. -->
                         </fieldset>
                     </form>
-                    <button class="contact-button">Send</button>
                 </div>
 
                 <div class="location">
