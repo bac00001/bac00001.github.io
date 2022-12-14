@@ -5,3 +5,197 @@
 table {
     border-spacing: 0px;
 } */
+
+/* apply font to the whole website body */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    background-color: #222;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+    /* column-gap: 30px; */
+    list-style: none;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c78c06;
+    /* padding: 20px 0px;
+    margin: 25px 0; */
+}
+
+nav .nav-home {
+    text-decoration: none;
+    color: #222;
+    background-color: #c78c06;
+    padding: 15px 0px;
+}
+
+.logo {
+    background-color: #c78c06;
+    padding-top: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.wrapper .banner {
+    background-image: url(/final-project/images/main-banner.jpg);
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner-text {
+    margin: auto 0;
+    background-color: rgb(34, 34, 34, .7);
+    /* rgb is used instead of #222 to facilitate turning down the opacity */  
+    padding: 20px 20px 35px 10px; 
+}
+
+h1 {
+    font-size: 55px;
+    color: white;
+}
+
+.banner-text p {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+
+.banner-button {
+    background-color: #c78c06;
+    padding: 25px 20px;
+    margin-bottom: 60px;
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+}
+
+.banner-button .fa-caret-right {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#about-us {
+    background-color: #ffe6ac;
+    padding: 10px 10px;
+}
+
+.about-us-image {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 12px;
+    color: #222;
+}
+
+.plan-card {
+    background-color: #ffe6ac;
+    margin: 10px 0px;
+}
+
+.plan-card img {
+    width: 100%;
+    height: auto;
+}
+
+.plan-card p {
+    margin: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 20px 10px;
+}
+
+.plan-card button {
+    color: white;
+    background-color: #222;
+    font-size: 18px;
+    margin: 10px 10px;
+    padding: 25px 20px;
+}
+
+.vision {
+    background-image: url(/final-project/images/vision.jpg);
+    background-size: 100% 100%;
+    padding: 15px 10px 10px 10px;
+}
+
+.vision-text {
+    color: white;
+}
+
+.vision-text p {
+    color: white;
+} 
+
+.vision-text button {
+    color: white;
+    background-color: #222;
+    font-size: 18px;
+    margin: 10px 10px;
+    padding: 25px 20px;
+    border: #c78c06 1px solid;
+}
+
+.team {
+    background-color: #ffe6ac;
+}
+
+.team img {
+    width: 100%;
+    height: auto;
+}
+
+.team p {
+    margin: 0 10px 10px 10px;
+}
+
+.team .john p {
+    margin-bottom: 10px;
+}
+
+.profession {
+    font-weight: 700;
+}
+
+hr {
+    margin: 0px 10px 0px 10px;
+    border: #c78c06 1px solid;
+}
+
+@media screen and (min-width: 760px) {
+    .wrapper .banner {
+        background-image: url(/final-project/images/main-banner.jpg);
+        
+    }
+
+    .about-us-image {
+        margin: 10px 10px;
+        width: 100%;
+        height: auto;
+    }
+}

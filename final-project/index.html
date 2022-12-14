@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS Reset  -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700" rel="stylesheet">
+
     <!-- Icons Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,35 +25,35 @@
 <body>
     <!-- Header Section -->
     <header class="wrapper">
-        
-            <nav>
-                <ul>
-                    <li class="logo">
-                        <img src="images/logo.png" alt="Logo">
-                    </li>
-                    <li class="nav-home">Home</li>
-                    <li> <a href="#about-us">About Us</a> </li>
-                    <li> <a href="#our-services">Services</a> </li>
-                    <li> <a href="#our-team">Team</a> </li>
-                    <li> <a href="#contact">Contact</a> </li>
-                    <!-- Hyperlinks added to each navigation elements to jump to each section. -->
 
-                    <!-- Search bar 
+        <nav>
+            <ul>
+                <li class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </li>
+                <li class="nav-home">Home</li>
+                <li> <a href="#about-us">About Us</a> </li>
+                <li> <a href="#our-services">Services</a> </li>
+                <li> <a href="#our-team">Team</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+                <!-- Hyperlinks added to each navigation elements to jump to each section. -->
+
+                <!-- Search bar 
                     The input tag makes the search bar interactive-->
-                    <li> <input class="search-bar" type="text" placeholder="Search">
+                <li> <input class="search-bar" type="text" placeholder="Search">
                     <!-- Search Icon -->
                     <i class="fa fa-search"></i>
-                    </li>
-                </ul>
-                <!-- For mobile screen, nav will be centered with background color for the logo and the nav-home and the logo is aligned-left. -->
-                <!-- For bigger screen, nav will be in a row -->
-                <!-- The states of hover, active, and visited will be added in the CSS. -->
+                </li>
+            </ul>
+            <!-- For mobile screen, nav will be centered with background color for the logo and the nav-home and the logo is aligned-left. -->
+            <!-- For bigger screen, nav will be in a row -->
+            <!-- The states of hover, active, and visited will be added in the CSS. -->
 
-            </nav>
-        
+        </nav>
+
 
         <!-- Banner section -->
-        <div class="wrapper">
+        <div class="wrapper banner">
             <!-- The background-photo will be added in the CSS. -->
 
             <div class="banner-text">
@@ -53,7 +61,7 @@
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis reprehenderit alias, odit suscipit
                     maiores nulla deleniti dolores esse dolor saepe, in aliquam necessitatibus ipsum expedita velit
-                    distinctio repellendus harum?
+                    distinctio repellendus harum!
                 </p>
 
                 <!-- <button class="banner-button"> 
@@ -64,7 +72,7 @@
                 <!-- The above method was marked as invalid in HTML Validator, so the method below will be used.
                      The styling to make it look like a button such as background-color and padding will be added in the CSS. -->
 
-                <a class="banner-button" href="#contact"> 
+                <a class="banner-button" href="#contact">
                     Connect with us <i class='fa fa-caret-right'></i>
                 </a>
                 <!-- The button is linked to the contact section, so it jumps to that section when the button is clicked. -->
@@ -80,15 +88,18 @@
         <section class="wrapper" id="about-us">
             <!-- id added to create hyperlink in the nav. -->
             <div>
-                <div class="about-us-image">
-                    <img  src="images/about-us.jpg" alt="Office Space">
+                <div>
+                    <img class="about-us-image" src="images/about-us.jpg" alt="Office Space">
                 </div>
                 <div class="about-us-text">
                     <h2 class="about-us-heading">About Us</h2>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda consequatur nesciunt ad labore, quod ab commodi quisquam eligendi? Ipsum neque quod dignissimos maiores. Nemo vero perspiciatis tempore, facilis ipsa repudiandae.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda consequatur nesciunt ad
+                        labore, quod ab commodi quisquam eligendi? Ipsum neque quod dignissimos maiores. Nemo vero
+                        perspiciatis tempore, facilis ipsa repudiandae.</p>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda consequatur nesciunt ad labore, quod ab commodi quisquam eligendi? Ipsum neque quod dignissimos maiores.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda consequatur nesciunt ad
+                        labore, quod ab commodi quisquam eligendi? Ipsum neque quod dignissimos maiores.</p>
                 </div>
             </div>
         </section>
@@ -97,12 +108,16 @@
         <section class="wrapper" id="our-services">
 
             <!-- For the bigger screen, grid-template-areas and grid-area will be used for the layout. -->
-            <div class="services-text"> <h2>Our Services</h2> </div>
+            <div class="services-text">
+                <h2>Our Services</h2>
+            </div>
 
             <div class="plan-card digital">
                 <img src="images/digital.jpg" alt="Digital Transformation">
                 <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente
+                    dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus
+                    provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Digital Plans <i class='fa fa-caret-right'></i>
                 </button>
@@ -111,7 +126,9 @@
             <div class="plan-card marketing">
                 <img src="images/marketing.jpg" alt="Marketing">
                 <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente
+                    dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus
+                    provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Marketing Plans <i class='fa fa-caret-right'></i>
                 </button>
@@ -120,7 +137,9 @@
             <div class="plan-card video">
                 <img src="images/video.jpg" alt="Video Production">
                 <h3>Video Production</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente
+                    dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus
+                    provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Video Plans <i class='fa fa-caret-right'></i>
                 </button>
@@ -129,7 +148,9 @@
             <div class="plan-card web">
                 <img src="images/web.jpg" alt="Web Development">
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente
+                    dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus
+                    provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Web Plans <i class='fa fa-caret-right'></i>
                 </button>
@@ -138,7 +159,9 @@
             <div class="plan-card print">
                 <img src="images/print.jpg" alt="Print">
                 <h3>Print</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus provident, mollitia in fuga. Ipsum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur rem porro sapiente
+                    dolorem quae, quo sequi ipsum. Officia sequi perferendis numquam impedit soluta temporibus
+                    provident, mollitia in fuga. Ipsum?</p>
                 <button>
                     Print Plans <i class='fa fa-caret-right'></i>
                 </button>
@@ -146,12 +169,14 @@
         </section>
 
         <!-- Vision Section -->
-        <div class="wrapper">
+        <div class="wrapper vision">
             <!-- background-image will be added in CSS. -->
 
-            <div>
+            <div class="vision-text">
                 <h2>Our Vision</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque autem iste nesciunt quasi. Nihil et, commodi optio praesentium asperiores, iste blanditiis eligendi mollitia hic repudiandae nam voluptatibus pariatur temporibus corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque autem iste nesciunt quasi. Nihil et,
+                    commodi optio praesentium asperiores, iste blanditiis eligendi mollitia hic repudiandae nam
+                    voluptatibus pariatur temporibus corrupti.</p>
                 <button>
                     Learn More <i class='fa fa-caret-right'></i>
                 </button>
@@ -166,24 +191,33 @@
                 <h2>Our Team</h2>
             </div>
 
-            <div class="john-image">
-                <img src="images/john.jpg" alt="John Doe">
-            </div>
-            <div class="john-text">
-                <h3>John Doe</h3>
-                <p class="profession">CEO and Co-owner</p>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem dolores voluptatibus debitis consequatur. Id quis numquam dolorem veritatis? Veniam culpa ratione perferendis magnam error voluptatibus commodi assumenda tenetur dignissimos.</p>
+            <div class="team john">
+                <div class="john-image">
+                    <img src="images/john.jpg" alt="John Doe">
+                </div>
+                <div class="john-text">
+                    <h3>John Doe</h3>
+                    <p class="profession">CEO and Co-owner</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem dolores
+                        voluptatibus debitis consequatur. Id quis numquam dolorem veritatis? Veniam culpa ratione
+                        perferendis magnam error voluptatibus commodi assumenda tenetur dignissimos.</p>
+                </div>
             </div>
 
-            <div class="bob-text">
-                <h3>Bob Rite</h3>
-                <p class="profession">CFO and Co-owner</p>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem dolores voluptatibus debitis consequatur. Id quis numquam dolorem veritatis? Veniam culpa ratione perferendis magnam error voluptatibus commodi assumenda tenetur dignissimos.</p>
-            </div>
-            <div class="bob-image">
-                <img src="images/bob.jpg" alt="Bob Rite">
+            <div class="team bob">
+                <div class="bob-image">
+                    <img src="images/bob.jpg" alt="Bob Rite">
+                </div>
+                <div class="bob-text">
+                    <h3>Bob Rite</h3>
+                    <p class="profession">CFO and Co-owner</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem dolores
+                        voluptatibus debitis consequatur. Id quis numquam dolorem veritatis? Veniam culpa ratione
+                        perferendis magnam error voluptatibus commodi assumenda tenetur dignissimos.</p>
+                </div>
+                
             </div>
         </section>
 
@@ -200,7 +234,7 @@
                     <h3>Send us a message</h3>
                     <!-- form and fieldset are used for the form to be interactive. -->
                     <form action="appreciation.html">
-                        <fieldset> 
+                        <fieldset>
                             <!-- remove the border of the fieldset in CSS. -->
 
                             <!-- put all the label and input in the same fieldset to group them in the same box. -->
@@ -222,34 +256,39 @@
 
                 <div class="location">
                     <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676094!2d-75.75712548407164!3d45.349927779099716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231257215!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676094!2d-75.75712548407164!3d45.349927779099716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231257215!5m2!1sen!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <div class="hour">
                     <table>
 
                         <!-- border and border-spacing will be used in the CSS. -->
-                        <caption> <h3>Hours of operation</h3> </caption>
-                
+                        <caption>
+                            <h3>Hours of operation</h3>
+                        </caption>
+
                         <thead>
                             <tr>
                                 <th>Days</th>
                                 <th>Hours</th>
                             </tr>
                         </thead>
-                
+
                         <tbody>
                             <tr>
                                 <td>Monday - Friday</td>
                                 <td>9 AM - 6 PM</td>
                             </tr>
-                
+
                             <tr>
                                 <td>Saturday - Sunday</td>
                                 <td>Closed</td>
                             </tr>
                         </tbody>
-                
+
                     </table>
 
                 </div>
@@ -260,7 +299,7 @@
     </main>
 
     <footer class="wrapper">
-        <p>&copy;  Copyright Three Star Media, 2020</p>
+        <p>&copy; Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
         <!-- link to the unsplash website is added. It opens in a new tab, so the user doesn't need to leave our site. -->
     </footer>
