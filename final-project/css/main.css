@@ -1,10 +1,4 @@
-/* th, td {
-    border: 1px solid black;
-}
 
-table {
-    border-spacing: 0px;
-} */
 
 /* apply font to the whole website body */
 body {
@@ -186,6 +180,8 @@ hr {
     margin: 0px 10px 0px 10px;
     border: #c78c06 1px solid;
 }
+
+
 
 @media screen and (min-width: 760px) {
     .wrapper .banner {
